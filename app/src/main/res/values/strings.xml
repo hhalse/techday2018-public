@@ -3,4 +3,5 @@
     <string name="hello_world">Hello, World!</string>
     <string name="camera_text">Would be nice to take a picture and show a thumbnail here</string>
     <string name="camera_button_text">Clik to open camera</string>
+    <string name="jingle_bells">Jingle bells</string>
 </resources>

@@ -21,7 +21,7 @@
         <activity android:name=".task1.Task1"/>
         <activity android:name=".task2databinding.Task2DataBinding"/>
         <activity android:name=".taskNotifications.TaskNotifications"/>
-
+        <activity android:name=".JingleBells.JingleBellsActivity"></activity>
     </application>
 
     <uses-feature android:name="android.hardware.camera"
