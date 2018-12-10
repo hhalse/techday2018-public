@@ -1,5 +1,6 @@
 package no.finn.techday2018
 
+import android.app.Activity
 import android.content.Intent
 import android.view.LayoutInflater
 import android.view.View
@@ -7,7 +8,9 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.annotation.DrawableRes
+import androidx.core.app.ActivityOptionsCompat
 import androidx.recyclerview.widget.RecyclerView
+
 
 class TaskListAdapter : RecyclerView.Adapter<TaskListItemHolder>() {
     var items: List<TaskListItem> = emptyList()
@@ -34,8 +37,12 @@ class TaskListItemHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
         textView.text = item.label
         itemView.setOnClickListener {
             val launchIntent = Intent(itemView.context, item.activityClass)
-            itemView.context.startActivity(launchIntent)
+            val options = createAvatarTransitionOptions(itemView.context as Activity, imageView)
+            itemView.context.startActivity(launchIntent, options.toBundle())
         }
+    }
 
+    private fun createAvatarTransitionOptions(activity: Activity, imageView: ImageView): ActivityOptionsCompat {
+        return ActivityOptionsCompat.makeSceneTransitionAnimation(activity, imageView, "avatar")
     }
 }

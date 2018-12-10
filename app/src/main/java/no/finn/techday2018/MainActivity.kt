@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import no.finn.techday2018.task1.Task1
 import no.finn.techday2018.task2databinding.Task2DataBinding
+import no.finn.techday2018.task3layout.LandscapeLayoutActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -16,7 +17,8 @@ class MainActivity : AppCompatActivity() {
         val taskListAdapter = TaskListAdapter()
         taskListAdapter.items = listOf(
             TaskListItem(Task1::class.java, "Hello, world!", R.drawable.hello_world),
-            TaskListItem(Task2DataBinding::class.java, "Data binding", R.drawable.hello_world)
+            TaskListItem(Task2DataBinding::class.java, "Data binding", R.drawable.hello_world),
+            TaskListItem(LandscapeLayoutActivity::class.java, "Layout orientation", R.drawable.hello_world)
         )
         taskList.adapter = taskListAdapter
         taskList.layoutManager = LinearLayoutManager(this)
