@@ -6,6 +6,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import no.finn.techday2018.task1.Task1
 import no.finn.techday2018.task2databinding.Task2DataBinding
+import no.finn.techday2018.taskCamera.TaskCameraIntent
 import no.finn.techday2018.taskNotifications.TaskNotifications
 
 class MainActivity : AppCompatActivity() {
@@ -17,8 +18,9 @@ class MainActivity : AppCompatActivity() {
         val taskListAdapter = TaskListAdapter()
         taskListAdapter.items = listOf(
             TaskListItem(Task1::class.java, "Hello, world!", R.drawable.hello_world),
-            TaskListItem(Task2DataBinding::class.java, "Data binding", R.drawable.hello_world),
-            TaskListItem(TaskNotifications::class.java, "Notifications", R.drawable.hello_world)
+            TaskListItem(Task2DataBinding::class.java, "Data binding", R.drawable.eddy),
+            TaskListItem(TaskNotifications::class.java, "Notifications", R.drawable.hwoarang),
+            TaskListItem(TaskCameraIntent::class.java, "Take a photo", R.drawable.mokujin)
         )
         taskList.adapter = taskListAdapter
         taskList.layoutManager = LinearLayoutManager(this)
