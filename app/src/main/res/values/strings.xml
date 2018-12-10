@@ -6,4 +6,6 @@
     <string name="jingle_bells">Jingle bells</string>
     <string name="web_view">Web view</string>
     <string name="finn_url">http://www.finn.no</string>
+    <string name="title_techitem_list">Lots of items</string>
+    <string name="title_techitem_detail">Details about item</string>
 </resources>

@@ -4,6 +4,10 @@
 
     <uses-permission android:name="android.permission.INTERNET"/>
 
+    <uses-feature
+            android:name="android.hardware.camera"
+            android:required="true"/>
+
     <application
             android:allowBackup="true"
             android:icon="@mipmap/ic_launcher"
@@ -12,6 +16,20 @@
             android:supportsRtl="true"
             android:usesCleartextTraffic="true"
             android:theme="@style/AppTheme">
+        <activity
+                android:name=".masterDetail.TechItemListActivity"
+                android:label="@string/title_techitem_list"
+                android:theme="@style/AppTheme">
+        </activity>
+        <activity
+                android:name=".masterDetail.TechItemDetailActivity"
+                android:label="@string/title_techitem_detail"
+                android:parentActivityName=".masterDetail.TechItemListActivity"
+                android:theme="@style/AppTheme">
+            <meta-data
+                    android:name="android.support.PARENT_ACTIVITY"
+                    android:value="no.finn.techday2018.masterDetail.TechItemListActivity"/>
+        </activity>
         <activity android:name=".taskCamera.TaskCamera">
         </activity>
         <activity android:name=".MainActivity">
@@ -24,12 +42,9 @@
         <activity android:name=".task1.Task1"/>
         <activity android:name=".task2databinding.Task2DataBinding"/>
         <activity android:name=".taskNotifications.TaskNotifications"/>
-        <activity android:name=".JingleBells.JingleBellsActivity"></activity>
         <activity android:name=".taskImage.TaskImage"></activity>
         <activity android:name=".WebView.WebViewActivity"></activity>
+        <activity android:name=".JingleBells.JingleBellsActivity"/>
     </application>
-
-    <uses-feature android:name="android.hardware.camera"
-                  android:required="true" />
 
 </manifest>
