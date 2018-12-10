@@ -4,4 +4,6 @@
     <string name="camera_text">Would be nice to take a picture and show a thumbnail here</string>
     <string name="camera_button_text">Clik to open camera</string>
     <string name="jingle_bells">Jingle bells</string>
+    <string name="web_view">Web view</string>
+    <string name="finn_url">http://www.finn.no</string>
 </resources>
