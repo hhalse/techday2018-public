@@ -38,22 +38,7 @@ class TaskNotifications: AppCompatActivity() {
             .setContentTitle("Tech Day")
             .setContentText("Change the icon to a snowy one and add jingle bell lyrics")
             .setStyle(NotificationCompat.BigTextStyle()
-                .bigText("Jingle bells, jingle bells\n" +
-                        "Jingle all the way,\n" +
-                        "Oh what fun it is to ride\n" +
-                        "In a one-horse open sleigh, \n" +
-                        "Jingle bells, jingle bells\n" +
-                        "Jingle all the way,\n" +
-                        "Oh what fun it is to ride\n" +
-                        "In a one-horse open sleigh.\n" +
-                        "Dashing through the snow\n" +
-                        "In a one-horse open sleigh\n" +
-                        "Through the fields we go\n" +
-                        "Laughing all the way.\n" +
-                        "Bells on bob-tail ring\n" +
-                        "Making spirits bright\n" +
-                        "What fun it is to ride and sing\n" +
-                        "A sleighing song tonight.")
+                .bigText(getString(R.string.jingle_bells_song_text))
             )
             .setPriority(NotificationCompat.PRIORITY_DEFAULT)
 
