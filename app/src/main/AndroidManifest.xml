@@ -46,6 +46,7 @@
         <activity android:name=".WebView.WebViewActivity"></activity>
         <activity android:name=".JingleBells.JingleBellsActivity"/>
         <activity android:name=".taskjson.TaskLoadJson"></activity>
+        <activity android:name=".task3layout.LandscapeLayoutActivity"></activity>
     </application>
 
 </manifest>
