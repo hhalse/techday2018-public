@@ -40,8 +40,8 @@ class TaskImage: AppCompatActivity() {
                 "\n\n" +
                 "" +
                 "Now take a look at the layout file for this Activity ($filename). " +
-                "There is an element with the ImageView, which we use to show the Image. Take a " +
-                "look at the comment above it." +
+                "There is an element called ImageView, which we use to show the Image on this page. Take " +
+                "a look at the comment above it." +
                 "\n\n" +
                 "$tryToChange to another image you found in the drawable" +
                 " folder. It could be e.g ginger_bread or reindeer."
