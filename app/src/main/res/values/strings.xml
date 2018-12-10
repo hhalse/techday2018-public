@@ -2,4 +2,6 @@
     <string name="app_name">FINN Tech day</string>
     <string name="hello_world">Hello, World!</string>
     <string name="jingle_bells">Jingle bells</string>
+    <string name="web_view">Web view</string>
+    <string name="finn_url">http://www.finn.no</string>
 </resources>

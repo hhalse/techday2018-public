@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
 import no.finn.techday2018.JingleBells.JingleBellsActivity
+import no.finn.techday2018.WebView.WebViewActivity
 import no.finn.techday2018.task1.Task1
 import no.finn.techday2018.task2databinding.Task2DataBinding
 import no.finn.techday2018.taskCamera.TaskCameraIntent
@@ -22,7 +23,8 @@ class MainActivity : AppCompatActivity() {
             TaskListItem(Task2DataBinding::class.java, "Data binding", R.drawable.eddy),
             TaskListItem(TaskNotifications::class.java, "Notifications", R.drawable.hwoarang),
             TaskListItem(TaskCameraIntent::class.java, "Take a photo", R.drawable.mokujin),
-            TaskListItem(JingleBellsActivity::class.java, getString(R.string.jingle_bells), R.drawable.hello_world)
+            TaskListItem(JingleBellsActivity::class.java, getString(R.string.jingle_bells), R.drawable.hello_world),
+            TaskListItem(WebViewActivity::class.java, getString(R.string.web_view), R.drawable.hello_world)
 
         )
         taskList.adapter = taskListAdapter
