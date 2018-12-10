@@ -61,4 +61,13 @@ class TaskImage: AppCompatActivity() {
         val indexOf = text.indexOf(highlight)
         spannable.setSpan(ForegroundColorSpan(Color.WHITE), indexOf, indexOf + highlight.length, Spannable.SPAN_EXCLUSIVE_EXCLUSIVE)
     }
+
+
+    /**
+     * Image sources used for this Exercise
+     * https://ausdroid.net/2013/11/30/android-addict-christmas-buying-guide/
+     * https://www.iconfinder.com/
+     *
+     * Do not use commercially
+     */
 }
