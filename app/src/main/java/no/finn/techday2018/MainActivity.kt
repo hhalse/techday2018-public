@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import no.finn.techday2018.JingleBells.JingleBellsActivity
 import no.finn.techday2018.task1.Task1
 
 class MainActivity : AppCompatActivity() {
@@ -14,7 +15,8 @@ class MainActivity : AppCompatActivity() {
 
         val taskListAdapter = TaskListAdapter()
         taskListAdapter.items = listOf(
-            TaskListItem(Task1::class.java, "Hello, world!", R.drawable.hello_world)
+            TaskListItem(Task1::class.java, "Hello, world!", R.drawable.hello_world),
+            TaskListItem(JingleBellsActivity::class.java, getString(R.string.jingle_bells), R.drawable.hello_world)
 
         )
         taskList.adapter = taskListAdapter
