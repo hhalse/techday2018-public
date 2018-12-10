@@ -22,7 +22,6 @@ class Task2DataBinding : AppCompatActivity() {
         //See if you can change the color of the background when clicking the button
         //And if possible use animation when changing color
 
-
         button.setOnClickListener { button ->
             val newColorPair = getNewColors()
             val animation = ValueAnimator.ofArgb(

@@ -18,6 +18,7 @@
         </activity>
         <activity android:name=".task1.Task1"></activity>
         <activity android:name=".task2databinding.Task2DataBinding"></activity>
+        <activity android:name=".taskNotifications.TaskNotifications"></activity>
     </application>
 
 </manifest>
