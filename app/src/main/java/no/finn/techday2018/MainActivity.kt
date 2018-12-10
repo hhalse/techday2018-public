@@ -13,7 +13,7 @@ import no.finn.techday2018.taskCamera.TaskCamera
 import no.finn.techday2018.taskNotifications.TaskNotifications
 import no.finn.techday2018.taskImage.TaskImage
 import no.finn.techday2018.taskjson.TaskLoadJson
-import no.finn.techday2018.task3layout.LandscapeLayoutActivity
+import no.finn.techday2018.taskOrientation.LandscapeLayoutActivity
 
 class MainActivity : AppCompatActivity() {
 
@@ -32,7 +32,7 @@ class MainActivity : AppCompatActivity() {
             TaskListItem(WebViewActivity::class.java, getString(R.string.web_view), R.drawable.hello_world),
             TaskListItem(TechItemListActivity::class.java, "Master detail", R.drawable.ling_xiayu),
             TaskListItem(TaskLoadJson::class.java, "Load resources (local and network)", R.drawable.jack),
-            TaskListItem(LandscapeLayoutActivity::class.java, "Layout orientation", R.drawable.hello_world)
+            TaskListItem(LandscapeLayoutActivity::class.java, "Layout orientation", R.drawable.reindeer)
         )
         taskList.adapter = taskListAdapter
         taskList.layoutManager = LinearLayoutManager(this)
