@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             TaskListItem(TaskImage::class.java, "Load Images", R.drawable.painting_landscape),
             TaskListItem(TaskNotifications::class.java, "Notifications", R.drawable.hwoarang),
             TaskListItem(TaskCamera::class.java, "Take a photo", R.drawable.mokujin),
-            TaskListItem(JingleBellsActivity::class.java, getString(R.string.jingle_bells), R.drawable.hello_world),
+            TaskListItem(JingleBellsActivity::class.java, getString(R.string.jingle_bells), R.drawable.accelerometer_icon),
             TaskListItem(WebViewActivity::class.java, getString(R.string.web_view), R.drawable.hello_world),
             TaskListItem(TechItemListActivity::class.java, "Master detail", R.drawable.ling_xiayu),
             TaskListItem(TaskLoadJson::class.java, "Load resources (local and network)", R.drawable.jack)
