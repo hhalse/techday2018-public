@@ -8,11 +8,12 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.layout_task_camera_intent.*
 import no.finn.techday2018.R
 
-class TaskCameraIntent : AppCompatActivity() {
+class TaskCamera : AppCompatActivity() {
 
     val REQUEST_IMAGE_CAPTURE = 1
 
     override fun onCreate(savedInstanceState: Bundle?) {
+        //Take a picture with the camera and show either a thumbnail or a fullsize image in our app
         super.onCreate(savedInstanceState)
         setContentView(R.layout.layout_task_camera_intent)
 //        https://developer.android.com/guide/topics/media/camera
