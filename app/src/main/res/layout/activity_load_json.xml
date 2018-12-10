@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".taskjson.TaskLoadJson">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:textAppearance="@style/TextAppearance.AppCompat.Headline"
+        android:textColor="@color/colorAccent"
+        android:text="Please click a button" />
+
+    <Button
+        android:id="@+id/helloButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="String from network" />
+
+    <Button
+        android:id="@+id/localJsonButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Objects from local file" />
+
+    <Button
+        android:id="@+id/networkJsonButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Objects from network" />
+
+</LinearLayout>

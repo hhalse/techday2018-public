@@ -11,6 +11,7 @@ import no.finn.techday2018.task2databinding.Task2DataBinding
 import no.finn.techday2018.taskCamera.TaskCamera
 import no.finn.techday2018.taskNotifications.TaskNotifications
 import no.finn.techday2018.taskImage.TaskImage
+import no.finn.techday2018.taskjson.TaskLoadJson
 
 class MainActivity : AppCompatActivity() {
 
@@ -26,7 +27,8 @@ class MainActivity : AppCompatActivity() {
             TaskListItem(TaskNotifications::class.java, "Notifications", R.drawable.hwoarang),
             TaskListItem(TaskCamera::class.java, "Take a photo", R.drawable.mokujin),
             TaskListItem(JingleBellsActivity::class.java, getString(R.string.jingle_bells), R.drawable.hello_world),
-            TaskListItem(WebViewActivity::class.java, getString(R.string.web_view), R.drawable.hello_world)
+            TaskListItem(WebViewActivity::class.java, getString(R.string.web_view), R.drawable.hello_world),
+            TaskListItem(TaskLoadJson::class.java, "Load resources (local and network)", R.drawable.jack)
 
         )
         taskList.adapter = taskListAdapter
