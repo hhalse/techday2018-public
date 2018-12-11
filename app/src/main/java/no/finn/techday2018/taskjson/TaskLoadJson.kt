@@ -54,14 +54,6 @@ class TaskLoadJson : AppCompatActivity() {
 
     }
 
-    private fun loadAdListFromResources(doOnSuccess: DoOnSuccess<List<AdItem>>, doOnFailure: DoOnFailure) {
-        val inputStream = resources.openRawResource(R.raw.result)
-        val json = inputStream.bufferedReader().use { it.readText() }
-        val adItems = gson.fromJson<List<AdItem>>(json, object : TypeToken<List<AdItem>>() {}.type)
-
-        doOnSuccess(adItems)
-    }
-
     private fun loadHelloWorldFromNetwork(doOnSuccess: DoOnSuccess<String>, doOnFailure: DoOnFailure) {
         backendService.getHelloWorldString().enqueue(object : Callback<ResponseBody> {
             override fun onFailure(call: Call<ResponseBody>, t: Throwable) {
@@ -73,6 +65,14 @@ class TaskLoadJson : AppCompatActivity() {
                 doOnSuccess(helloWorld)
             }
         })
+    }
+
+    private fun loadAdListFromResources(doOnSuccess: DoOnSuccess<List<AdItem>>, doOnFailure: DoOnFailure) {
+        val inputStream = resources.openRawResource(R.raw.result)
+        val json = inputStream.bufferedReader().use { it.readText() }
+        val adItems = gson.fromJson<List<AdItem>>(json, object : TypeToken<List<AdItem>>() {}.type)
+
+        doOnSuccess(adItems)
     }
 
     private fun loadAdListFromNetwork(doOnSuccess: DoOnSuccess<List<AdItem>>, doOnFailure: DoOnFailure) {
