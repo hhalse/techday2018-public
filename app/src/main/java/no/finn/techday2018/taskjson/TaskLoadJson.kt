@@ -1,11 +1,11 @@
 package no.finn.techday2018.taskjson
 
-import no.finn.techday2018.R
-import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import androidx.appcompat.app.AppCompatActivity
 import com.google.gson.Gson
 import com.google.gson.reflect.TypeToken
 import kotlinx.android.synthetic.main.activity_load_json.*
+import no.finn.techday2018.R
 import okhttp3.ResponseBody
 import retrofit2.Call
 import retrofit2.Callback
@@ -68,11 +68,14 @@ class TaskLoadJson : AppCompatActivity() {
     }
 
     private fun loadAdListFromResources(doOnSuccess: DoOnSuccess<List<AdItem>>, doOnFailure: DoOnFailure) {
-        val inputStream = resources.openRawResource(R.raw.result)
-        val json = inputStream.bufferedReader().use { it.readText() }
-        val adItems = gson.fromJson<List<AdItem>>(json, object : TypeToken<List<AdItem>>() {}.type)
-
-        doOnSuccess(adItems)
+        try {
+            val inputStream = resources.openRawResource(R.raw.result)
+            val json = inputStream.bufferedReader().readText()
+            val adItems = gson.fromJson<List<AdItem>>(json, object : TypeToken<List<AdItem>>() {}.type)
+            doOnSuccess(adItems)
+        } catch (t: Throwable) {
+            doOnFailure(t)
+        }
     }
 
     private fun loadAdListFromNetwork(doOnSuccess: DoOnSuccess<List<AdItem>>, doOnFailure: DoOnFailure) {
