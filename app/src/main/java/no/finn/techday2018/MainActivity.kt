@@ -27,7 +27,7 @@ class MainActivity : AppCompatActivity() {
             TaskListItem(Task1::class.java, "Hello, world!", R.drawable.hello_world),
             TaskListItem(Task2DataBinding::class.java, "Data binding", R.drawable.eddy),
             TaskListItem(TaskImage::class.java, "Load Images", R.drawable.painting_landscape),
-            TaskListItem(UiEventsActivity::class.java, "Ui Events", R.drawable.touch),
+            TaskListItem(UiEventsActivity::class.java, "UI Events", R.drawable.touch),
             TaskListItem(TaskNotifications::class.java, "Notifications", R.drawable.hwoarang),
             TaskListItem(TaskCamera::class.java, "Take a photo", R.drawable.mokujin),
             TaskListItem(JingleBellsActivity::class.java, getString(R.string.jingle_bells), R.drawable.accelerometer_icon),
