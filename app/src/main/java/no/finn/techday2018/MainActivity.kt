@@ -4,8 +4,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
-import no.finn.techday2018.JingleBells.JingleBellsActivity
-import no.finn.techday2018.WebView.WebViewActivity
+import no.finn.techday2018.JingleBells.TaskJingleBellsActivity
+import no.finn.techday2018.WebView.TaskWebViewActivity
 import no.finn.techday2018.masterDetail.TechItemListActivity
 import no.finn.techday2018.task1.Task1
 import no.finn.techday2018.task2databinding.TaskViewBindingActivity
@@ -24,17 +24,17 @@ class MainActivity : AppCompatActivity() {
 
         val taskListAdapter = TaskListAdapter()
         taskListAdapter.items = listOf(
-            TaskListItem(Task1::class.java, "Hello, world!", R.drawable.hello_world),
-            TaskListItem(TaskViewBindingActivity::class.java, "View binding", R.drawable.eddy),
-            TaskListItem(TaskUiEventsActivity::class.java, "Ui Events", R.drawable.touch, "touch"),
-            TaskListItem(TaskOrientationActivity::class.java, "Layout orientation", R.drawable.reindeer, "reindeer"),
-            TaskListItem(TaskImageActivity::class.java, "Load Images", R.drawable.painting_landscape),
-            TaskListItem(TaskNotificationsActivity::class.java, "Notifications", R.drawable.hwoarang),
-            TaskListItem(TaskCameraActivity::class.java, "Take a photo", R.drawable.mokujin),
-            //TaskListItem(WebViewActivity::class.java, getString(R.string.web_view), R.drawable.hello_world),
-            TaskListItem(TechItemListActivity::class.java, "Master detail", R.drawable.ling_xiayu),
-            TaskListItem(TaskLoadJsonActivity::class.java, "Load resources (local and network)", R.drawable.jack),
-            TaskListItem(JingleBellsActivity::class.java, getString(R.string.jingle_bells), R.drawable.accelerometer_icon)
+            TaskListItem(Task1::class.java, getString(R.string.task_label_hello_world), R.drawable.hello_world),
+            TaskListItem(TaskViewBindingActivity::class.java, getString(R.string.task_label_view_binding), R.drawable.eddy),
+            TaskListItem(TaskUiEventsActivity::class.java, getString(R.string.task_label_ui_events), R.drawable.touch, getString(R.string.transition_touch)),
+            TaskListItem(TaskOrientationActivity::class.java, getString(R.string.task_label_orientation), R.drawable.santa, getString(R.string.transition_santa)),
+            TaskListItem(TaskImageActivity::class.java, getString(R.string.task_label_image), R.drawable.painting_landscape),
+            TaskListItem(TaskNotificationsActivity::class.java, getString(R.string.task_label_notifications), R.drawable.hwoarang),
+            TaskListItem(TaskCameraActivity::class.java, getString(R.string.task_label_camera), R.drawable.mokujin),
+            TaskListItem(TaskWebViewActivity::class.java, getString(R.string.task_label_web_view), R.drawable.random_tekken),
+            TaskListItem(TechItemListActivity::class.java, getString(R.string.task_label_master_detail), R.drawable.ling_xiayu),
+            TaskListItem(TaskLoadJsonActivity::class.java, getString(R.string.task_label_load_json), R.drawable.jack),
+            TaskListItem(TaskJingleBellsActivity::class.java, getString(R.string.task_label_jingle_bells), R.drawable.accelerometer_icon)
         )
         taskList.adapter = taskListAdapter
         taskList.layoutManager = LinearLayoutManager(this)

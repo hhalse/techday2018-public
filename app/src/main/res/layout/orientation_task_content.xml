@@ -16,8 +16,8 @@
             android:background="@drawable/round_rect"
             android:backgroundTint="@color/colorPrimary"
             android:padding="4dp"
-            android:src="@drawable/reindeer"
-            android:transitionName="reindeer" />
+            android:src="@drawable/santa"
+            android:transitionName="@string/transition_santa" />
 
         <TextView
             android:id="@+id/textViewTitle"
