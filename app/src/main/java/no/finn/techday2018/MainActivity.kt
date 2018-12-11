@@ -15,6 +15,7 @@ import no.finn.techday2018.taskNotifications.TaskNotificationsActivity
 import no.finn.techday2018.taskOrientation.TaskOrientationActivity
 import no.finn.techday2018.taskjson.TaskLoadJsonActivity
 import no.finn.techday2018.taskrecyclerview.TaskRecyclerView
+import no.finn.techday2018.tasksnow.TaskSnowActivity
 import no.finn.techday2018.taskuievents.TaskUiEventsActivity
 
 class MainActivity : AppCompatActivity() {
@@ -36,7 +37,9 @@ class MainActivity : AppCompatActivity() {
             TaskListItem(TechItemListActivity::class.java, getString(R.string.task_label_master_detail), R.drawable.ling_xiayu),
             TaskListItem(TaskLoadJsonActivity::class.java, getString(R.string.task_label_load_json), R.drawable.jack),
             TaskListItem(TaskJingleBellsActivity::class.java, getString(R.string.task_label_jingle_bells), R.drawable.accelerometer_icon),
-            TaskListItem(TaskRecyclerView::class.java, getString(R.string.task_label_recyclerview), R.drawable.asuka)
+            TaskListItem(TaskRecyclerView::class.java, getString(R.string.task_label_recyclerview), R.drawable.asuka),
+            TaskListItem(TaskSnowActivity::class.java, getString(R.string.task_label_snow), R.drawable.snowflake)
+
         )
         taskList.adapter = taskListAdapter
         taskList.layoutManager = LinearLayoutManager(this)

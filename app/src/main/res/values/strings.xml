@@ -14,6 +14,7 @@
     <string name="task_label_load_json">Load resources (local and network)</string>
     <string name="task_label_jingle_bells">Jingle bells</string>
     <string name="task_label_recyclerview">RecyclerView</string>
+    <string name="task_label_snow">Snow</string>
 
     <string name="transition_touch" translatable="false">touch</string>
     <string name="transition_santa" translatable="false">santa</string>

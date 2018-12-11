@@ -18,14 +18,11 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-
         <activity
             android:name=".masterDetail.TechItemListActivity"
             android:label="@string/title_techitem_list"
             android:theme="@style/AppTheme" />
-
         <activity android:name=".taskuievents.TaskUiEventsActivity" />
-
         <activity
             android:name=".masterDetail.TechItemDetailActivity"
             android:label="@string/title_techitem_detail"
@@ -51,7 +48,8 @@
         <activity android:name=".JingleBells.TaskJingleBellsActivity" />
         <activity android:name=".taskjson.TaskLoadJsonActivity" />
         <activity android:name=".taskOrientation.TaskOrientationActivity" />
-        <activity android:name=".taskrecyclerview.TaskRecyclerView"></activity>
+        <activity android:name=".taskrecyclerview.TaskRecyclerView" />
+        <activity android:name=".tasksnow.TaskSnowActivity"></activity>
     </application>
 
 </manifest>
