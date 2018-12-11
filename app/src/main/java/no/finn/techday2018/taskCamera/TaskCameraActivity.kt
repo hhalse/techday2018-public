@@ -8,7 +8,7 @@ import androidx.appcompat.app.AppCompatActivity
 import kotlinx.android.synthetic.main.layout_task_camera_intent.*
 import no.finn.techday2018.R
 
-class TaskCamera : AppCompatActivity() {
+class TaskCameraActivity : AppCompatActivity() {
 
     val REQUEST_IMAGE_CAPTURE = 1
 

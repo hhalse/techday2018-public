@@ -8,7 +8,7 @@ import no.finn.techday2018.R
 import android.graphics.drawable.ColorDrawable
 
 
-class Task2DataBinding : AppCompatActivity() {
+class TaskViewBindingActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_task2_databinding)

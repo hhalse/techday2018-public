@@ -10,7 +10,7 @@ import android.webkit.WebViewClient
 import android.widget.EditText
 
 
-class WebViewActivity : AppCompatActivity() {
+class TaskWebViewActivity : AppCompatActivity() {
 
     private lateinit var webView: WebView
 

@@ -26,13 +26,18 @@ class TaskListAdapter : RecyclerView.Adapter<TaskListItemHolder>() {
     override fun onBindViewHolder(holder: TaskListItemHolder, position: Int) = holder.bind(items[position])
 }
 
-data class TaskListItem(val activityClass: Class<*>, val label: String, @DrawableRes val imageResource: Int)
+data class TaskListItem(
+    val activityClass: Class<*>,
+    val label: String, @DrawableRes val imageResource: Int,
+    val imageTransitionName: String? = null
+)
 
 class TaskListItemHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val imageView: ImageView = itemView.findViewById(R.id.imageView)
     private val textView: TextView = itemView.findViewById(R.id.textView)
 
     fun bind(item: TaskListItem) {
+        imageView.transitionName = item.imageTransitionName.orEmpty()
         imageView.setImageResource(item.imageResource)
         textView.text = item.label
         itemView.setOnClickListener {
@@ -43,6 +48,6 @@ class TaskListItemHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     }
 
     private fun createAvatarTransitionOptions(activity: Activity, imageView: ImageView): ActivityOptionsCompat {
-        return ActivityOptionsCompat.makeSceneTransitionAnimation(activity, imageView, "avatar")
+        return ActivityOptionsCompat.makeSceneTransitionAnimation(activity, imageView, imageView.transitionName)
     }
 }

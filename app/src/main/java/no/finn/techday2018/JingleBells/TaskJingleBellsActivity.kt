@@ -6,7 +6,7 @@ import android.os.Bundle
 import no.finn.techday2018.R
 import android.media.MediaPlayer
 
-class JingleBellsActivity : AppCompatActivity(), AccelSensor.OnAccelEvent {
+class TaskJingleBellsActivity : AppCompatActivity(), AccelSensor.OnAccelEvent {
 
     private val accelSensor = AccelSensor(this)
 
