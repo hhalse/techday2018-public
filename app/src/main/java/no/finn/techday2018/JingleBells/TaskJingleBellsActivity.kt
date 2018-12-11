@@ -9,14 +9,34 @@ import android.media.MediaPlayer
 class TaskJingleBellsActivity : AppCompatActivity(), AccelSensor.OnAccelEvent {
 
     private val accelSensor = AccelSensor(this)
+    private val mediaPlayer = MediaPlayer()
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_jingle_bells)
+        initMediaPlayer()
     }
 
-    fun playSound() {
-        playAssetSound(this, "jingle_bells.wav")
+    private fun initMediaPlayer() {
+        val descriptor = this.assets.openFd("jingle_bells.wav")
+        mediaPlayer.setDataSource(
+            descriptor.fileDescriptor,
+            descriptor.startOffset,
+            descriptor.length
+        )
+        descriptor.close()
+
+        mediaPlayer.prepare()
+        mediaPlayer.setVolume(0.5f, 0.5f)
+        mediaPlayer.isLooping = false
+    }
+
+    private fun playSound() {
+        if (mediaPlayer.isPlaying) {
+            mediaPlayer.pause()
+            mediaPlayer.seekTo(0)
+        }
+        mediaPlayer.start()
     }
 
     override fun onResume() {
@@ -26,33 +46,11 @@ class TaskJingleBellsActivity : AppCompatActivity(), AccelSensor.OnAccelEvent {
 
     override fun onPause() {
         super.onPause()
-        accelSensor.onPause()
+        accelSensor.onPause()   // save battery
     }
 
     override fun onShake() {
         playSound()
-    }
-
-    fun playAssetSound(context: Context, soundFileName: String) {
-        try {
-            val mediaPlayer = MediaPlayer()
-
-            val descriptor = context.getAssets().openFd(soundFileName)
-            mediaPlayer.setDataSource(
-                descriptor.getFileDescriptor(),
-                descriptor.getStartOffset(),
-                descriptor.getLength()
-            )
-            descriptor.close()
-
-            mediaPlayer.prepare()
-            mediaPlayer.setVolume(0.5f, 0.5f)
-            mediaPlayer.isLooping = false
-            mediaPlayer.start()
-        } catch (e: Exception) {
-            e.printStackTrace()
-        }
-
     }
 
 }
