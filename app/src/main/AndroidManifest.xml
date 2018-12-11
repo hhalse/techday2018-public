@@ -22,7 +22,7 @@
                 android:label="@string/title_techitem_list"
                 android:theme="@style/AppTheme"/>
 
-        <activity android:name=".taskuievents.UiEventsActivity"/>
+        <activity android:name=".taskuievents.TaskUiEventsActivity"/>
 
         <activity
                 android:name=".masterDetail.TechItemDetailActivity"
@@ -33,7 +33,7 @@
                     android:name="android.support.PARENT_ACTIVITY"
                     android:value="no.finn.techday2018.masterDetail.TechItemListActivity"/>
         </activity>
-        <activity android:name=".taskCamera.TaskCamera"></activity>
+        <activity android:name=".taskCamera.TaskCameraActivity"></activity>
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -42,13 +42,13 @@
             </intent-filter>
         </activity>
         <activity android:name=".task1.Task1"/>
-        <activity android:name=".task2databinding.Task2DataBinding"/>
-        <activity android:name=".taskNotifications.TaskNotifications"/>
-        <activity android:name=".taskImage.TaskImage"/>
+        <activity android:name=".task2databinding.TaskViewBindingActivity"/>
+        <activity android:name=".taskNotifications.TaskNotificationsActivity"/>
+        <activity android:name=".taskImage.TaskImageActivity"/>
         <activity android:name=".WebView.WebViewActivity"/>
         <activity android:name=".JingleBells.JingleBellsActivity"/>
-        <activity android:name=".taskjson.TaskLoadJson"/>
-        <activity android:name=".taskOrientation.LandscapeLayoutActivity"/>
+        <activity android:name=".taskjson.TaskLoadJsonActivity"/>
+        <activity android:name=".taskOrientation.TaskOrientationActivity"/>
     </application>
 
 </manifest>

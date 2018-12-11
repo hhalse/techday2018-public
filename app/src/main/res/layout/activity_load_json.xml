@@ -7,7 +7,7 @@
     android:background="@color/colorPrimaryDark"
     android:orientation="vertical"
     android:gravity="center_horizontal"
-    tools:context=".taskjson.TaskLoadJson">
+    tools:context=".taskjson.TaskLoadJsonActivity">
 
     <TextView
         android:id="@+id/textView"

@@ -2,7 +2,7 @@
     <string name="app_name">FINN Tech day</string>
     <string name="hello_world">Hello, World!</string>
     <string name="camera_text">Would be nice to take a picture and show a thumbnail here</string>
-    <string name="camera_button_text">Clik to open camera</string>
+    <string name="camera_button_text">Click to open camera</string>
     <string name="jingle_bells">Jingle bells</string>
     <string name="jingle_bells_song_text">Jingle bells, jingle bells Jingle all the way, Oh what fun it is to ride In a one-horse open sleigh, Jingle bells, jingle bells Jingle all the way, Oh what fun it is to ride In a one-horse open sleigh. Dashing through the snow In a one-horse open sleigh Through the fields we go Laughing all the way. Bells on bob-tail ring Making spirits bright What fun it is to ride and sing A sleighing song tonight.</string>
     <string name="web_view">Web view</string>
@@ -18,7 +18,7 @@
         The View class, from which all UI components are derived contains a wide range event listener interfaces and
         each listener interface contains an abstract declaration for a callback method.
     </string>
-    <string name="ui_event_header_text">UI Events and Onclick listeners</string>
+    <string name="ui_event_header_text">UI Events and onClick listeners</string>
     <string name="change_color_button_text">Change Text Color</string>
     <string name="play_jingle_button_text">Play Jingle</string>
     <string name="long_press_button_text">Long press</string>

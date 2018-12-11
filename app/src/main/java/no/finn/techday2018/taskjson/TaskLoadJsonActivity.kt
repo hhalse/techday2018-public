@@ -16,7 +16,7 @@ import retrofit2.converter.gson.GsonConverterFactory
 typealias DoOnSuccess<T> = (response: T) -> Unit
 typealias DoOnFailure = (throwable: Throwable) -> Unit
 
-class TaskLoadJson : AppCompatActivity() {
+class TaskLoadJsonActivity : AppCompatActivity() {
 
     private val gson: Gson by lazy { Gson() }
     private val retrofit: Retrofit by lazy {

@@ -37,7 +37,7 @@ class TaskListItemHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     private val textView: TextView = itemView.findViewById(R.id.textView)
 
     fun bind(item: TaskListItem) {
-        imageView.transitionName = item.imageTransitionName
+        imageView.transitionName = item.imageTransitionName.orEmpty()
         imageView.setImageResource(item.imageResource)
         textView.text = item.label
         itemView.setOnClickListener {

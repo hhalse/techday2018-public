@@ -9,7 +9,7 @@ import android.widget.TextView;
 import androidx.appcompat.app.AppCompatActivity;
 import no.finn.techday2018.R;
 
-public class UiEventsActivity extends AppCompatActivity {
+public class TaskUiEventsActivity extends AppCompatActivity {
     MediaPlayer mPlayer;
 
     @Override
@@ -61,7 +61,7 @@ public class UiEventsActivity extends AppCompatActivity {
         playJingleButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                mPlayer = MediaPlayer.create(UiEventsActivity.this, R.raw.jingle1);
+                mPlayer = MediaPlayer.create(TaskUiEventsActivity.this, R.raw.jingle1);
                 mPlayer.start();
             }
         });

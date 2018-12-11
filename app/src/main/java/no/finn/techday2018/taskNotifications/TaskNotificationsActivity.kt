@@ -12,7 +12,7 @@ import kotlinx.android.synthetic.main.activity_task_notifications.*
 import no.finn.techday2018.R
 import kotlin.math.roundToInt
 
-class TaskNotifications: AppCompatActivity() {
+class TaskNotificationsActivity: AppCompatActivity() {
 
     private val notificationChannelId: String = "CHANNEL_ID_X"
 
