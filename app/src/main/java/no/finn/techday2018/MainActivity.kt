@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
+import no.finn.techday2018.taskDialogs.TaskDialogsActivity
 import no.finn.techday2018.JingleBells.TaskJingleBellsActivity
 import no.finn.techday2018.WebView.TaskWebViewActivity
 import no.finn.techday2018.masterDetail.TechItemListActivity
@@ -36,6 +37,7 @@ class MainActivity : AppCompatActivity() {
             TaskListItem(TaskWebViewActivity::class.java, getString(R.string.task_label_web_view), R.drawable.random_tekken),
             TaskListItem(TechItemListActivity::class.java, getString(R.string.task_label_master_detail), R.drawable.ling_xiayu),
             TaskListItem(TaskLoadJsonActivity::class.java, getString(R.string.task_label_load_json), R.drawable.jack),
+            TaskListItem(TaskDialogsActivity::class.java, getString(R.string.task_label_dialogs), R.drawable.hello_world),
             TaskListItem(TaskJingleBellsActivity::class.java, getString(R.string.task_label_jingle_bells), R.drawable.accelerometer_icon),
             TaskListItem(TaskRecyclerView::class.java, getString(R.string.task_label_recyclerview), R.drawable.asuka),
             TaskListItem(TaskSnowActivity::class.java, getString(R.string.task_label_snow), R.drawable.snowflake)
