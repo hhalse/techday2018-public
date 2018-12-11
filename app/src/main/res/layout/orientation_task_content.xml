@@ -17,7 +17,7 @@
             android:backgroundTint="@color/colorPrimary"
             android:padding="4dp"
             android:src="@drawable/reindeer"
-            android:transitionName="avatar"
+            android:transitionName="reindeer"
             tools:ignore="ContentDescription" />
 
         <TextView

@@ -10,7 +10,7 @@
                     android:layout_margin="5dp"
     >
         <ImageView android:layout_width="80dp"
-                   android:transitionName="avatar"
+                   android:transitionName="touch"
                    android:id="@+id/touchImage"
                    android:layout_height="80dp"
                    android:src="@drawable/touch" android:layout_alignParentEnd="true"
