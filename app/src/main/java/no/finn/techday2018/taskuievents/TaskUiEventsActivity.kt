@@ -8,7 +8,7 @@ import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 import no.finn.techday2018.R
 
-class UiEventsActivity : AppCompatActivity() {
+class TaskUiEventsActivity : AppCompatActivity() {
     internal var mPlayer: MediaPlayer? = null
 
     override fun onCreate(savedInstanceState: Bundle?) {
@@ -47,7 +47,7 @@ class UiEventsActivity : AppCompatActivity() {
         }
 
         playJingleButton.setOnClickListener {
-            mPlayer = MediaPlayer.create(this@UiEventsActivity, R.raw.jingle1)
+            mPlayer = MediaPlayer.create(this@TaskUiEventsActivity, R.raw.jingle1)
             mPlayer?.start()
         }
     }
