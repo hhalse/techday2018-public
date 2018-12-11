@@ -45,10 +45,10 @@ class ExternalImageRecyclerViewAdapter(val urls: List<String>, val context: Cont
      * The ViewHolder contains an ImageView. That means that this is a perfect place for us to load the image.
      */
     override fun onBindViewHolder(holder: ViewHolder, position: Int) {
-//        Glide
-//            .with(holder.imageView)
-//            .load( /* Here goes the url that Glide should load */)
-//            .into( /* Here goes the ImageView Glide should load the image in */)
+        Glide
+            .with(holder.imageView)
+            .load(urls[position])
+            .into(holder.imageView)
     }
 }
 
