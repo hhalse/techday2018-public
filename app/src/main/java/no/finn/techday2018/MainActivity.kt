@@ -11,6 +11,7 @@ import no.finn.techday2018.masterDetail.TechItemListActivity
 import no.finn.techday2018.task1.Task1
 import no.finn.techday2018.task2databinding.TaskViewBindingActivity
 import no.finn.techday2018.taskCamera.TaskCameraActivity
+import no.finn.techday2018.taskExternalImage.TaskLoadExternalImage
 import no.finn.techday2018.taskImage.TaskImageActivity
 import no.finn.techday2018.taskNotifications.TaskNotificationsActivity
 import no.finn.techday2018.taskOrientation.TaskOrientationActivity
@@ -40,7 +41,8 @@ class MainActivity : AppCompatActivity() {
             TaskListItem(TaskDialogsActivity::class.java, getString(R.string.task_label_dialogs), R.drawable.hello_world),
             TaskListItem(TaskJingleBellsActivity::class.java, getString(R.string.task_label_jingle_bells), R.drawable.accelerometer_icon),
             TaskListItem(TaskRecyclerView::class.java, getString(R.string.task_label_recyclerview), R.drawable.asuka),
-            TaskListItem(TaskSnowActivity::class.java, getString(R.string.task_label_snow), R.drawable.snowflake)
+            TaskListItem(TaskSnowActivity::class.java, getString(R.string.task_label_snow), R.drawable.snowflake),
+            TaskListItem(TaskLoadExternalImage::class.java, getString(R.string.task_label_external_images), R.drawable.glide_logo)
 
         )
         taskList.adapter = taskListAdapter

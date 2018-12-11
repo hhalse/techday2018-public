@@ -16,6 +16,7 @@
     <string name="task_label_recyclerview">RecyclerView</string>
     <string name="task_label_snow">Snow</string>
     <string name="task_label_dialogs">Dialogs</string>
+    <string name="task_label_external_images">External Images</string>
 
     <string name="transition_touch" translatable="false">touch</string>
     <string name="transition_santa" translatable="false">santa</string>

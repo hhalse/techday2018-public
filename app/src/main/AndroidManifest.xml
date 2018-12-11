@@ -51,6 +51,7 @@
         <activity android:name=".taskrecyclerview.TaskRecyclerView" />
         <activity android:name=".tasksnow.TaskSnowActivity" />
         <activity android:name=".taskDialogs.TaskDialogsActivity"></activity>
+        <activity android:name=".taskExternalImage.TaskLoadExternalImage" />
     </application>
 
 </manifest>
