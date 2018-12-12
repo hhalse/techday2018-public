@@ -23,6 +23,7 @@
                 android:paddingBottom="32dp"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
         />
 
         <!-- Beneath this comment is an ImageView used to show images in a Layout.
