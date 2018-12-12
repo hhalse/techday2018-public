@@ -7,6 +7,7 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.bumptech.glide.Glide
 import kotlinx.android.synthetic.main.ad_item.view.*
 import no.finn.techday2018.R
 
@@ -40,7 +41,10 @@ class AdItemViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView) {
     val titleView: TextView = itemView.titleView
 
     fun bind(adItem: AdItem) {
-        imageView.setImageResource(R.drawable.hwoarang) // TODO: Replace with adItem.imageUrl
+        Glide
+            .with(imageView)
+            .load(adItem.imageUrl)
+            .into(imageView)
         titleView.text = adItem.title
         imageOverlay.text = adItem.imageOverlay
     }
