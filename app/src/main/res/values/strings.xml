@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">FINN Tech day</string>
+    <string name="hello_world">Hello, world!</string>
+
+    <string name="task_label_hello_world">@string/hello_world</string>
+    <string name="task_label_view_binding">View binding</string>
+    <string name="task_label_ui_events">UI Events</string>
+    <string name="task_label_orientation">Layout orientation</string>
+    <string name="task_label_image">Load Images</string>
+    <string name="task_label_notifications">Notifications</string>
+    <string name="task_label_camera">Take a photo</string>
+    <string name="task_label_web_view">Web view</string>
+    <string name="task_label_master_detail">Master detail</string>
+    <string name="task_label_load_json">Load resources (local and network)</string>
+    <string name="task_label_jingle_bells">Jingle bells</string>
+    <string name="task_label_dialogs">Dialogs</string>
+    <string name="task_label_recyclerview">RecyclerView</string>
+    <string name="task_label_snow">Snow</string>
+    <string name="task_label_external_images">External Images</string>
+
+    <string name="transition_touch" translatable="false">touch</string>
+    <string name="transition_santa" translatable="false">santa</string>
+
+    <string name="camera_text">Would be nice to take a picture and show a thumbnail here</string>
+    <string name="camera_button_text">Click to open camera</string>
+    <string name="jingle_bells_song_text">Jingle bells, jingle bells Jingle all the way, Oh what fun it is to ride In a one-horse open sleigh, Jingle bells, jingle bells Jingle all the way, Oh what fun it is to ride In a one-horse open sleigh. Dashing through the snow In a one-horse open sleigh Through the fields we go Laughing all the way. Bells on bob-tail ring Making spirits bright What fun it is to ride and sing A sleighing song tonight.</string>
+    <string name="finn_url">http://www.finn.no</string>
+    <string name="title_techitem_list">Lots of items</string>
+    <string name="title_techitem_detail">Details about item</string>
+    <string name="ui_event_body_text">To handle input events in android, the views must have in place an event listener.
+        The View class, from which all UI components are derived contains a wide range event listener interfaces and
+        each listener interface contains an abstract declaration for a callback method.
+    </string>
+    <string name="ui_event_task_text">Task: Create a new button below "Play Jingle" button and bind it in the Kotlin code and change the color of the button on click.
+        Button name: "Task button";
+        color to change : blue
+    </string>
+    <string name="ui_event_header_text">UI Events and onClick listeners</string>
+    <string name="change_color_button_text">Change Text Color</string>
+    <string name="play_jingle_button_text">Play Jingle</string>
+    <string name="long_press_button_text">Long press</string>
+    <string name="reset_button_text">Reset</string>
+</resources>

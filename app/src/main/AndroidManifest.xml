@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="no.finn.techday2018">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <uses-feature
+        android:name="android.hardware.camera"
+        android:required="true" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".task9masterdetail.TechItemListActivity"
+            android:label="@string/title_techitem_list"
+            android:theme="@style/AppTheme" />
+        <activity android:name=".task3uievents.TaskUiEventsActivity" />
+        <activity
+            android:name=".task9masterdetail.TechItemDetailActivity"
+            android:label="@string/title_techitem_detail"
+            android:parentActivityName=".task9masterdetail.TechItemListActivity"
+            android:theme="@style/AppTheme">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value="no.finn.techday2018.task9masterdetail.TechItemListActivity" />
+        </activity>
+        <activity android:name=".task7Camera.TaskCameraActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name=".task1.Task1" />
+        <activity android:name=".task2databinding.TaskViewBindingActivity" />
+        <activity android:name=".task6Notifications.TaskNotificationsActivity" />
+        <activity android:name=".task5Image.TaskImageActivity" />
+        <activity android:name=".task8webview.TaskWebViewActivity" />
+        <activity android:name=".task12jinglebells.TaskJingleBellsActivity" />
+        <activity android:name=".task10json.TaskLoadJsonActivity" />
+        <activity android:name=".task4Orientation.TaskOrientationActivity" />
+        <activity android:name=".task13recyclerview.TaskRecyclerView" />
+        <activity android:name=".task15snow.TaskSnowActivity" />
+        <activity android:name=".task11Dialogs.TaskDialogsActivity"></activity>
+        <activity android:name=".task14ExternalImage.TaskLoadExternalImage" />
+    </application>
+
+</manifest>

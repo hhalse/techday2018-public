@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="5dp">
+
+    <ImageView
+        android:id="@+id/touchImage"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="8dp"
+        android:layout_marginEnd="0dp"
+        android:src="@drawable/touch"
+        android:transitionName="@string/transition_touch" />
+
+    <TextView
+        android:id="@+id/headerText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="0dp"
+        android:layout_marginBottom="30dp"
+        android:text="@string/ui_event_header_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Display2" />
+
+        <TextView
+            android:id="@+id/bodyText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/headerText"
+            android:layout_marginBottom="50dp"
+            android:text="@string/ui_event_body_text"
+            android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+        <Button
+            android:id="@+id/changeColorButton"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/bodyText"
+            android:layout_marginBottom="10dp"
+            android:text="@string/change_color_button_text" />
+
+    <Button
+        android:id="@+id/playJingleButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/changeColorButton"
+        android:layout_marginBottom="10dp"
+        android:text="@string/play_jingle_button_text" />
+
+    <Button
+        android:id="@+id/longPressButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/playJingleButton"
+        android:layout_marginBottom="10dp"
+        android:text="@string/long_press_button_text" />
+
+    <Button
+        android:id="@+id/resetButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/longPressButton"
+        android:layout_centerHorizontal="true"
+        android:text="@string/reset_button_text" />
+
+    <TextView
+        android:id="@+id/taskText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/resetButton"
+        android:layout_marginTop="50dp"
+        android:text="@string/ui_event_task_text"
+        android:textAppearance="@style/TextAppearance.AppCompat.Body1" />
+
+
+    </RelativeLayout>

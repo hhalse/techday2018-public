@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <!--
+        In this task we will take a look at how we can reorganize views, to utilize the screen width in landscape mode.
+
+        The included orientation_task_content.xml consists of an ImageView and two TextViews, vertically stacked.
+        This xml is currently default for all configurations (portrait or landscape).
+
+        1) Create a new resource folder for landscape layouts (res/layout-land)
+        2) Copy orientation_task_content.xml into the layout-land folder
+        3) Modify the landscape layout so that the image is displayed on the left hand side of the texts
+        4) Optional - play around with different colors and/or text sizes for the landscape version
+    -->
+
+    <include layout="@layout/orientation_task_content" />
+
+</ScrollView>
