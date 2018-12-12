@@ -1,4 +1,4 @@
-package no.finn.techday2018.taskjson
+package no.finn.techday2018.task10json
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

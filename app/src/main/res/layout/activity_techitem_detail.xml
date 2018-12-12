@@ -6,7 +6,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:fitsSystemWindows="true"
-        tools:context=".masterDetail.TechItemDetailActivity"
+        tools:context=".task9masterdetail.TechItemDetailActivity"
         tools:ignore="MergeRootFrame">
 
     <com.google.android.material.appbar.AppBarLayout
@@ -50,7 +50,7 @@
                   android:layout_height="match_parent"
                   android:padding="16dp"
                   android:textIsSelectable="true"
-                  tools:context=".masterDetail.TechItemDetailFragment"/>
+                  tools:context=".task9masterdetail.TechItemDetailFragment"/>
 
     </androidx.core.widget.NestedScrollView>
 

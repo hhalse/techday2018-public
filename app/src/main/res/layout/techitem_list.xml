@@ -10,5 +10,5 @@
         android:layout_marginLeft="16dp"
         android:layout_marginRight="16dp"
         app:layoutManager="LinearLayoutManager"
-        tools:context=".masterDetail.TechItemListActivity"
+        tools:context=".task9masterdetail.TechItemListActivity"
         tools:listitem="@layout/techitem_list_content"/>

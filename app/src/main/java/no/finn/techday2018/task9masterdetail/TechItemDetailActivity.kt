@@ -1,4 +1,4 @@
-package no.finn.techday2018.masterDetail
+package no.finn.techday2018.task9masterdetail
 
 import android.content.Intent
 import android.os.Bundle

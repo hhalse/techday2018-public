@@ -7,14 +7,14 @@ import kotlinx.android.synthetic.main.activity_main.*
 import no.finn.techday2018.taskDialogs.TaskDialogsActivity
 import no.finn.techday2018.JingleBells.TaskJingleBellsActivity
 import no.finn.techday2018.task8webview.TaskWebViewActivity
-import no.finn.techday2018.masterDetail.TechItemListActivity
+import no.finn.techday2018.task9masterdetail.TechItemListActivity
 import no.finn.techday2018.task1.Task1
 import no.finn.techday2018.task2databinding.TaskViewBindingActivity
 import no.finn.techday2018.task7Camera.TaskCameraActivity
 import no.finn.techday2018.taskExternalImage.TaskLoadExternalImage
 import no.finn.techday2018.task6Notifications.TaskNotificationsActivity
 import no.finn.techday2018.task4Orientation.TaskOrientationActivity
-import no.finn.techday2018.taskjson.TaskLoadJsonActivity
+import no.finn.techday2018.task10json.TaskLoadJsonActivity
 import no.finn.techday2018.taskrecyclerview.TaskRecyclerView
 import no.finn.techday2018.tasksnow.TaskSnowActivity
 import no.finn.techday2018.task3uievents.TaskUiEventsActivity

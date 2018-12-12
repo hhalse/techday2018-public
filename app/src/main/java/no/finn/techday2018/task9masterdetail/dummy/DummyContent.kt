@@ -1,4 +1,4 @@
-package no.finn.techday2018.masterDetail.dummy
+package no.finn.techday2018.task9masterdetail.dummy
 
 import java.util.ArrayList
 import java.util.HashMap
