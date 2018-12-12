@@ -34,6 +34,10 @@
         The View class, from which all UI components are derived contains a wide range event listener interfaces and
         each listener interface contains an abstract declaration for a callback method.
     </string>
+    <string name="ui_event_task_text">Task: Create a new button below "Play Jingle" button and bind it in the Kotlin code and change the color of the button on click.
+        Button name: "Task button";
+        color to change : blue
+    </string>
     <string name="ui_event_header_text">UI Events and onClick listeners</string>
     <string name="change_color_button_text">Change Text Color</string>
     <string name="play_jingle_button_text">Play Jingle</string>
