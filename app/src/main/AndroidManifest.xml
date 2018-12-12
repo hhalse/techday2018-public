@@ -44,7 +44,7 @@
         <activity android:name=".task2databinding.TaskViewBindingActivity" />
         <activity android:name=".task6Notifications.TaskNotificationsActivity" />
         <activity android:name=".task5Image.TaskImageActivity" />
-        <activity android:name=".WebView.TaskWebViewActivity" />
+        <activity android:name=".task8webview.TaskWebViewActivity" />
         <activity android:name=".JingleBells.TaskJingleBellsActivity" />
         <activity android:name=".taskjson.TaskLoadJsonActivity" />
         <activity android:name=".task4Orientation.TaskOrientationActivity" />

@@ -1,13 +1,8 @@
-package no.finn.techday2018.WebView
+package no.finn.techday2018.task8webview
 
-import android.annotation.SuppressLint
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.view.View
-import android.webkit.WebView
 import no.finn.techday2018.R
-import android.webkit.WebViewClient
-import android.widget.EditText
 
 
 class TaskWebViewActivity : AppCompatActivity() {
