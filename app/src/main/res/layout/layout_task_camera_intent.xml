@@ -6,7 +6,7 @@
         android:layout_height="match_parent"
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:background="@color/colorPrimaryDark"
-        tools:context=".taskCamera.TaskCameraActivity">
+        tools:context=".task7Camera.TaskCameraActivity">
 
     <Button
             android:id="@+id/button"
@@ -27,7 +27,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="@string/camera_text"
-            android:textColor="@color/colorPrimary"
+            android:textColor="@color/colorAccent"
             app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintBottom_toTopOf="@id/button"

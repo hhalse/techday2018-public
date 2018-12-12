@@ -1,4 +1,4 @@
-package no.finn.techday2018.taskCamera
+package no.finn.techday2018.task7Camera
 
 import android.content.Intent
 import android.graphics.Bitmap

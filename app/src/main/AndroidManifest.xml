@@ -32,7 +32,7 @@
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value="no.finn.techday2018.masterDetail.TechItemListActivity" />
         </activity>
-        <activity android:name=".taskCamera.TaskCameraActivity" />
+        <activity android:name=".task7Camera.TaskCameraActivity" />
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
