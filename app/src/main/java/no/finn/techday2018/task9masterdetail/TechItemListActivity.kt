@@ -1,5 +1,6 @@
 package no.finn.techday2018.task9masterdetail
 
+import android.content.Intent
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.RecyclerView
@@ -13,7 +14,7 @@ import no.finn.techday2018.task9masterdetail.dummy.DummyContent
 import kotlinx.android.synthetic.main.activity_techitem_list.*
 import kotlinx.android.synthetic.main.techitem_list_content.view.*
 import kotlinx.android.synthetic.main.techitem_list.*
-import no.finn.techday2018.masterDetail.TechItemDetailActivity.Companion.ARG_ITEM_ID
+import no.finn.techday2018.task9masterdetail.TechItemDetailActivity.Companion.ARG_ITEM_ID
 
 class TechItemListActivity : AppCompatActivity() {
 

@@ -6,7 +6,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.view.MenuItem
 import kotlinx.android.synthetic.main.activity_techitem_detail.*
 import no.finn.techday2018.R
-import no.finn.techday2018.masterDetail.dummy.DummyContent
+import no.finn.techday2018.task9masterdetail.dummy.DummyContent
 
 class TechItemDetailActivity : AppCompatActivity() {
     companion object {
