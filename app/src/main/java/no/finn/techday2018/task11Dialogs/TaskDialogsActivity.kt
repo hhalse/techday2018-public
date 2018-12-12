@@ -1,4 +1,4 @@
-package no.finn.techday2018.taskDialogs
+package no.finn.techday2018.task11Dialogs
 
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle

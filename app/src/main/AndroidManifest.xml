@@ -45,12 +45,12 @@
         <activity android:name=".task6Notifications.TaskNotificationsActivity" />
         <activity android:name=".task5Image.TaskImageActivity" />
         <activity android:name=".task8webview.TaskWebViewActivity" />
-        <activity android:name=".JingleBells.TaskJingleBellsActivity" />
+        <activity android:name=".task12jinglebells.TaskJingleBellsActivity" />
         <activity android:name=".task10json.TaskLoadJsonActivity" />
         <activity android:name=".task4Orientation.TaskOrientationActivity" />
         <activity android:name=".taskrecyclerview.TaskRecyclerView" />
         <activity android:name=".tasksnow.TaskSnowActivity" />
-        <activity android:name=".taskDialogs.TaskDialogsActivity"></activity>
+        <activity android:name=".task11Dialogs.TaskDialogsActivity"></activity>
         <activity android:name=".taskExternalImage.TaskLoadExternalImage" />
     </application>
 

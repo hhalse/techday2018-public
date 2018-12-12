@@ -1,10 +1,8 @@
-package no.finn.techday2018.JingleBells
+package no.finn.techday2018.task12jinglebells
 
-import android.content.Context
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import no.finn.techday2018.R
-import android.media.MediaPlayer
 
 class TaskJingleBellsActivity : AppCompatActivity(), AccelSensor.OnAccelEvent {
 

@@ -4,12 +4,12 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.recyclerview.widget.LinearLayoutManager
 import kotlinx.android.synthetic.main.activity_main.*
-import no.finn.techday2018.taskDialogs.TaskDialogsActivity
-import no.finn.techday2018.JingleBells.TaskJingleBellsActivity
+import no.finn.techday2018.task12jinglebells.TaskJingleBellsActivity
 import no.finn.techday2018.task8webview.TaskWebViewActivity
 import no.finn.techday2018.task9masterdetail.TechItemListActivity
 import no.finn.techday2018.task1.Task1
 import no.finn.techday2018.task2databinding.TaskViewBindingActivity
+import no.finn.techday2018.task11Dialogs.TaskDialogsActivity
 import no.finn.techday2018.task7Camera.TaskCameraActivity
 import no.finn.techday2018.taskExternalImage.TaskLoadExternalImage
 import no.finn.techday2018.task6Notifications.TaskNotificationsActivity
