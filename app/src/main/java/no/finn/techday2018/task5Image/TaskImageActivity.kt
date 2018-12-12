@@ -1,4 +1,4 @@
-package no.finn.techday2018.taskImage
+package no.finn.techday2018.task5Image
 
 import android.graphics.Color
 import no.finn.techday2018.R
