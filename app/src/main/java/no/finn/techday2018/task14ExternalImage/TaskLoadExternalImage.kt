@@ -1,4 +1,4 @@
-package no.finn.techday2018.taskExternalImage
+package no.finn.techday2018.task14ExternalImage
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

@@ -1,4 +1,4 @@
-package no.finn.techday2018.taskrecyclerview
+package no.finn.techday2018.task13recyclerview
 
 data class AdItem(
     val imageUrl: String,

@@ -1,4 +1,4 @@
-package no.finn.techday2018.tasksnow
+package no.finn.techday2018.task15snow
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

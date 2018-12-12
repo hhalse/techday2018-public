@@ -1,4 +1,4 @@
-package no.finn.techday2018.taskrecyclerview
+package no.finn.techday2018.task13recyclerview
 
 import android.content.Context
 import android.view.LayoutInflater

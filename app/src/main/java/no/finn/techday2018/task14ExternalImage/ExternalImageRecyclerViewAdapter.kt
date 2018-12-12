@@ -1,4 +1,4 @@
-package no.finn.techday2018.taskExternalImage
+package no.finn.techday2018.task14ExternalImage
 
 import android.content.Context
 import android.view.LayoutInflater

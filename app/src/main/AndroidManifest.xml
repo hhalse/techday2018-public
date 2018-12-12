@@ -48,10 +48,10 @@
         <activity android:name=".task12jinglebells.TaskJingleBellsActivity" />
         <activity android:name=".task10json.TaskLoadJsonActivity" />
         <activity android:name=".task4Orientation.TaskOrientationActivity" />
-        <activity android:name=".taskrecyclerview.TaskRecyclerView" />
-        <activity android:name=".tasksnow.TaskSnowActivity" />
+        <activity android:name=".task13recyclerview.TaskRecyclerView" />
+        <activity android:name=".task15snow.TaskSnowActivity" />
         <activity android:name=".task11Dialogs.TaskDialogsActivity"></activity>
-        <activity android:name=".taskExternalImage.TaskLoadExternalImage" />
+        <activity android:name=".task14ExternalImage.TaskLoadExternalImage" />
     </application>
 
 </manifest>
