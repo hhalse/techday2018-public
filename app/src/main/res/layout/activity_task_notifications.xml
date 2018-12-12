@@ -7,7 +7,7 @@
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:background="@color/colorPrimaryDark"
-        tools:context=".taskNotifications.TaskNotificationsActivity">
+        tools:context=".task6Notifications.TaskNotificationsActivity">
 
     <Button
             android:id="@+id/button"

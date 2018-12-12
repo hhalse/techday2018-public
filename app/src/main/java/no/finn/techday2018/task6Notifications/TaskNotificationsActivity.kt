@@ -1,4 +1,4 @@
-package no.finn.techday2018.taskNotifications
+package no.finn.techday2018.task6Notifications
 
 import android.app.NotificationChannel
 import android.app.NotificationManager

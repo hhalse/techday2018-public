@@ -12,7 +12,7 @@ import no.finn.techday2018.task1.Task1
 import no.finn.techday2018.task2databinding.TaskViewBindingActivity
 import no.finn.techday2018.taskCamera.TaskCameraActivity
 import no.finn.techday2018.taskExternalImage.TaskLoadExternalImage
-import no.finn.techday2018.taskNotifications.TaskNotificationsActivity
+import no.finn.techday2018.task6Notifications.TaskNotificationsActivity
 import no.finn.techday2018.task4Orientation.TaskOrientationActivity
 import no.finn.techday2018.taskjson.TaskLoadJsonActivity
 import no.finn.techday2018.taskrecyclerview.TaskRecyclerView
