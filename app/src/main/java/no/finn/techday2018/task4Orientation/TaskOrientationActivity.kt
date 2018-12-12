@@ -1,4 +1,4 @@
-package no.finn.techday2018.taskOrientation
+package no.finn.techday2018.task4Orientation
 
 import android.os.Bundle
 import android.text.Spannable

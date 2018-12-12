@@ -47,7 +47,7 @@
         <activity android:name=".WebView.TaskWebViewActivity" />
         <activity android:name=".JingleBells.TaskJingleBellsActivity" />
         <activity android:name=".taskjson.TaskLoadJsonActivity" />
-        <activity android:name=".taskOrientation.TaskOrientationActivity" />
+        <activity android:name=".task4Orientation.TaskOrientationActivity" />
         <activity android:name=".taskrecyclerview.TaskRecyclerView" />
         <activity android:name=".tasksnow.TaskSnowActivity" />
         <activity android:name=".taskDialogs.TaskDialogsActivity"></activity>
