@@ -18,7 +18,7 @@ import no.finn.techday2018.taskOrientation.TaskOrientationActivity
 import no.finn.techday2018.taskjson.TaskLoadJsonActivity
 import no.finn.techday2018.taskrecyclerview.TaskRecyclerView
 import no.finn.techday2018.tasksnow.TaskSnowActivity
-import no.finn.techday2018.taskuievents.TaskUiEventsActivity
+import no.finn.techday2018.task3uievents.TaskUiEventsActivity
 
 class MainActivity : AppCompatActivity() {
 

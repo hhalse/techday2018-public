@@ -22,7 +22,7 @@
             android:name=".masterDetail.TechItemListActivity"
             android:label="@string/title_techitem_list"
             android:theme="@style/AppTheme" />
-        <activity android:name=".taskuievents.TaskUiEventsActivity" />
+        <activity android:name=".task3uievents.TaskUiEventsActivity" />
         <activity
             android:name=".masterDetail.TechItemDetailActivity"
             android:label="@string/title_techitem_detail"
