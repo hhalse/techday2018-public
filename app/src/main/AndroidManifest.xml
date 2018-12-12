@@ -49,7 +49,9 @@
         <activity android:name=".taskjson.TaskLoadJsonActivity" />
         <activity android:name=".taskOrientation.TaskOrientationActivity" />
         <activity android:name=".taskrecyclerview.TaskRecyclerView" />
-        <activity android:name=".tasksnow.TaskSnowActivity"></activity>
+        <activity android:name=".tasksnow.TaskSnowActivity" />
+        <activity android:name=".taskDialogs.TaskDialogsActivity"></activity>
+        <activity android:name=".taskExternalImage.TaskLoadExternalImage" />
     </application>
 
 </manifest>

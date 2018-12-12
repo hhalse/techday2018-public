@@ -12,28 +12,23 @@ class AccelSensor internal constructor(private val listener: OnAccelEvent) {
     private var tracking = false
 
     private var mSensorManager: SensorManager? = null
-    private var mAccel: Float = 0.toFloat() // acceleration apart from gravity
-    private var mAccelCurrent: Float = 0.toFloat() // current acceleration including gravity
-    private var mAccelLast: Float = 0.toFloat() // last acceleration including gravity
+    private var mAccel: Float = 0.toFloat() // current acceleration including gravity
 
     private val mSensorListener = object : SensorEventListener {
 
-        var TRESHOLD_HIGH = 6
-        var TRESHOLD_LOW = 2
+        var TRESHOLD_HIGH = 2
+        var TRESHOLD_LOW = 1
 
         override fun onSensorChanged(se: SensorEvent) {
             val x = se.values[0]
             val y = se.values[1]
             val z = se.values[2]
-            mAccelLast = mAccelCurrent
-            mAccelCurrent = Math.sqrt((x * x + y * y + z * z).toDouble()).toFloat()
-            val delta = mAccelCurrent - mAccelLast
-            mAccel = mAccel * 0.9f + delta // perform low-cut filter
+            mAccel = Math.sqrt((x * x + y * y + z * z).toDouble()).toFloat()
 
             // track and detect shake gesture
-            if (mAccel > TRESHOLD_HIGH)
+            if (mAccel > SensorManager.GRAVITY_EARTH + TRESHOLD_HIGH)
                 tracking = true
-            else if (mAccel < TRESHOLD_LOW) {
+            else if (mAccel < SensorManager.GRAVITY_EARTH + TRESHOLD_LOW) {
                 if (tracking) {
                     listener.onShake()
                     tracking = false
@@ -69,9 +64,7 @@ class AccelSensor internal constructor(private val listener: OnAccelEvent) {
                 mSensorManager?.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
                 SensorManager.SENSOR_DELAY_NORMAL
             )
-            mAccel = 0.00f
-            mAccelCurrent = SensorManager.GRAVITY_EARTH
-            mAccelLast = SensorManager.GRAVITY_EARTH
+            mAccel = SensorManager.GRAVITY_EARTH
             initialized = true
         }
     }
