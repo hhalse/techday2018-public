@@ -12,13 +12,13 @@ import no.finn.techday2018.task1.Task1
 import no.finn.techday2018.task2databinding.TaskViewBindingActivity
 import no.finn.techday2018.taskCamera.TaskCameraActivity
 import no.finn.techday2018.taskExternalImage.TaskLoadExternalImage
-import no.finn.techday2018.taskImage.TaskImageActivity
 import no.finn.techday2018.taskNotifications.TaskNotificationsActivity
 import no.finn.techday2018.task4Orientation.TaskOrientationActivity
 import no.finn.techday2018.taskjson.TaskLoadJsonActivity
 import no.finn.techday2018.taskrecyclerview.TaskRecyclerView
 import no.finn.techday2018.tasksnow.TaskSnowActivity
 import no.finn.techday2018.task3uievents.TaskUiEventsActivity
+import no.finn.techday2018.task5Image.TaskImageActivity
 
 class MainActivity : AppCompatActivity() {
 
